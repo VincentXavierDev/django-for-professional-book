@@ -1,0 +1,9 @@
+version: '3.9.10'
+services:
+  web:
+    build: .
+    command: python /chapte1_docker/manage.py runserver 0.0.0.0:8000
+    volumes:
+    - .:/chapte1_docker
+    ports:
+    - 8000:8000
